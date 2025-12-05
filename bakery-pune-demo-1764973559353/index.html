@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Bakery Pune Demo - Official Site</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+      /* Dark Theme Settings */
+      body {
+        font-family: sans-serif;
+        background-color: #0f172a;
+        color: white;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="fixed w-full z-50 glass px-6 py-4 flex justify-between items-center border-b border-gray-800">
+      <h1 class="text-2xl font-bold text-blue-400">{{BUSINESS_NAME}}</h1>
+      <a
+        href="#contact"
+        class="bg-blue-600 px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-500 transition"
+        >Contact Us</a
+      >
+    </nav>
+
+    <main id="hero">
+<section class="h-screen bg-gray-900 text-white">
+  <div class="container mx-auto p-12 pt-24 md:p-24">
+    <div class="flex flex-wrap justify-center -mx-4">
+      <div class="w-full px-4 lg:w-1/2 xl:w-1/2">
+        <h1 class="text-5xl font-bold mb-4">Bakery Pune Demo</h1>
+        <p class="text-lg mb-8">Indulge in the sweetest treats in town, freshly baked just for you.</p>
+        <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Explore Our Bakery</button>
+      </div>
+      <div class="w-full px-4 lg:w-1/2 xl:w-1/2">
+        <img src="image/bakery.jpg" alt="Bakery Image" class="w-full h-full object-cover object-center">
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+    <section
+      id="features"
+      class="py-20 px-4">
+      
+<section class="bg-gray-100 py-20">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap justify-center text-center mb-12">
+      <h2 class="text-3xl font-bold">Features of Our Bakery</h2>
+    </div>
+    <div class="flex flex-wrap justify-center">
+      <div class="w-full lg:w-1/3 xl:w-1/3 p-6">
+        <div class="bg-white rounded-lg shadow-xl glassmorphize p-10">
+          <h3 class="text-lg font-bold mb-2">Fresh Ingredients</h3>
+          <p class="text-gray-600">We use only the freshest ingredients in our baked goods, ensuring the best taste and quality.</p>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/3 xl:w-1/3 p-6">
+        <div class="bg-white rounded-lg shadow-xl glassmorphize p-10">
+          <h3 class="text-lg font-bold mb-2">Expert Bakers</h3>
+          <p class="text-gray-600">Our team of expert bakers have years of experience in crafting delicious treats that are sure to impress.</p>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/3 xl:w-1/3 p-6">
+        <div class="bg-white rounded-lg shadow-xl glassmorphize p-10">
+          <h3 class="text-lg font-bold mb-2">Custom Orders</h3>
+          <p class="text-gray-600">We offer custom ordering for special occasions, allowing you to create the perfect treat for your event.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </section>
+
+    <section id="contact">
+<section class="bg-gray-100 py-12">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold mb-2">Get in Touch</h2>
+      <p class="text-lg text-gray-600">Contact us to place your order or inquire about our services</p>
+    </div>
+    <div class="flex flex-wrap justify-center -mx-4">
+      <div class="w-full lg:w-1/2 xl:w-1/2 p-4">
+        <form>
+          <input type="text" placeholder="Name" class="block w-full p-2 mb-4 border border-gray-400 rounded">
+          <input type="email" placeholder="Email" class="block w-full p-2 mb-4 border border-gray-400 rounded">
+          <textarea placeholder="Message" class="block w-full p-2 mb-4 border border-gray-400 rounded"></textarea>
+          <button type="submit" class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Send Message</button>
+        </form>
+      </div>
+      <div class="w-full lg:w-1/2 xl:w-1/2 p-4">
+        <h3 class="text-2xl font-bold mb-2">Contact Information</h3>
+        <ul>
+          <li class="mb-2"><i class="fas fa-phone mr-2"></i> +91 1234567890</li>
+          <li class="mb-2"><i class="fas fa-envelope mr-2"></i> <a href="mailto:info@bakerypune.com">info@bakerypune.com</a></li>
+          <li class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Pune, India</li>
+        </ul>
+        <a href="https://wa.me/911234567890" target="_blank" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">WhatsApp Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+    <footer
+      class="text-center py-8 text-gray-500 text-sm border-t border-gray-800">
+      &copy; 2025 {{BUSINESS_NAME}}. Built with AI.
+    </footer>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.from('#hero', { opacity: 0, y: 50, duration: 1.5 });
+      gsap.from('#features', {
+        scrollTrigger: '#features',
+        opacity: 0,
+        y: 30,
+        duration: 1,
+      });
+    </script>
+  </body>
+</html>
