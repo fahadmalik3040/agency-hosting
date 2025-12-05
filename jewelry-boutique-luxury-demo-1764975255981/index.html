@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry_Boutique Luxury Demo - Official Site</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+        body { 
+            font-family: 'Outfit', sans-serif; 
+            background-color: #050505; /* Deep Black Background */
+            color: #f8fafc; 
+            overflow-x: hidden; /* Horizontal scroll prevent */
+        }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        
+        /* Glassmorphism Effect */
+        .glass { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(16px); 
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        /* Gradient Text for Headings */
+        .text-gradient {
+            background: linear-gradient(to right, #fbbf24, #d946ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 px-6 py-4 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto glass rounded-full px-6 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wide">{{BUSINESS_NAME}}</h1>
+            <a href="#contact-section" class="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-6 py-2 rounded-full font-medium hover:scale-105 transition-transform shadow-lg shadow-orange-500/30">Book Now</a>
+        </div>
+    </nav>
+
+    <main id="hero-section" class="relative min-h-screen flex items-center justify-center pt-28 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-purple-600/20 rounded-full blur-[120px] -z-10"></div>
+        ### High-Impact Hero Section for Jewelry_Boutique Luxury Demo
+
+
+<section class="h-screen bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://image.pollinations.ai/prompt/cinematic%20shot%20of%20Jewelry_Boutique,%20modern%20lighting,%20dark%20mood,%204k,%20luxury%20aesthetic?width=1280&height=720&nologo=true')">
+  <div class="container mx-auto p-12 pt-24 md:p-24 text-center">
+    <h1 class="text-gradient text-7xl md:text-9xl font-serif font-bold mb-12">Experience Luxury Jewelry</h1>
+    <p class="text-lg md:text-2xl text-white mb-12">Discover the art of fine jewelry making at Jewelry_Boutique Luxury Demo</p>
+    <div class="flex flex-col md:flex-row justify-center mb-12 gap-4">
+      <button class="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-2 px-4 rounded hover:from-purple-700 hover:to-pink-700">Book Now</button>
+      <button class="border border-white text-white font-bold py-2 px-4 rounded hover:bg-white hover:text-gray-900">Learn More</button>
+    </div>
+  </div>
+</section>
+
+
+### Explanation
+
+This HTML code creates a high-impact hero section for the Jewelry_Boutique Luxury Demo. 
+
+- The `section` element uses a linear gradient overlay with an opacity of 0.6 to provide contrast over the background image.
+- The `h1` element uses the `text-gradient` class and a large font size (`text-7xl` or larger on desktop) to create a modern and luxurious typography effect.
+- Two prominent buttons are included: "Book Now" with a gradient background and "Learn More" with an outlined style. Both buttons have hover effects to enhance user engagement.
+- The code ensures excellent mobile responsiveness using Tailwind CSS utility classes. 
+
+Note: This code assumes you have Tailwind CSS installed and configured in your project. If not, you can include the Tailwind CSS CDN link in your HTML file or install it using npm or yarn. 
+
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    </main>
+
+    <section id="features-section" class="py-32 px-6 relative max-w-7xl mx-auto">
+        
+<!-- Services/Features Section -->
+<section class="services-section py-20">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl text-center mb-8">Premium Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Service 1: Custom Design -->
+      <div class="glass feature-card p-8 rounded-2xl hover:bg-white/10 transition duration-300 transform hover:scale-[1.02]" data-aos="fade-up">
+        <div class="flex items-center mb-4">
+          <span class="text-4xl mr-4">💎</span>
+          <h3 class="text-xl font-bold">Custom Design</h3>
+        </div>
+        <p class="text-lg">Get a bespoke piece of jewelry designed specifically for you by our expert designers.</p>
+      </div>
+
+      <!-- Service 2: Jewelry Repair -->
+      <div class="glass feature-card p-8 rounded-2xl hover:bg-white/10 transition duration-300 transform hover:scale-[1.02]" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex items-center mb-4">
+          <span class="text-4xl mr-4">🛠️</span>
+          <h3 class="text-xl font-bold">Jewelry Repair</h3>
+        </div>
+        <p class="text-lg">Our skilled craftsmen can repair and restore your treasured jewelry pieces to their former glory.</p>
+      </div>
+
+      <!-- Service 3: Diamond Certification -->
+      <div class="glass feature-card p-8 rounded-2xl hover:bg-white/10 transition duration-300 transform hover:scale-[1.02]" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex items-center mb-4">
+          <span class="text-4xl mr-4">💍</span>
+          <h3 class="text-xl font-bold">Diamond Certification</h3>
+        </div>
+        <p class="text-lg">Get your diamonds certified by our in-house gemologists to ensure their authenticity and quality.</p>
+      </div>
+
+      <!-- Service 4: Jewelry Appraisal -->
+      <div class="glass feature-card p-8 rounded-2xl hover:bg-white/10 transition duration-300 transform hover:scale-[1.02]" data-aos="fade-up" data-aos-delay="300">
+        <div class="flex items-center mb-4">
+          <span class="text-4xl mr-4">📊</span>
+          <h3 class="text-xl font-bold">Jewelry Appraisal</h3>
+        </div>
+        <p class="text-lg">Get an expert appraisal of your jewelry pieces to determine their value and authenticity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+In the code above:
+
+*   We define a `services-section` with a container and a heading.
+*   We use CSS Grid to create a layout with 3 columns on desktop and 1 column on mobile.
+*   Each service is represented by a card with the class `glass feature-card`.
+*   We use relevant emojis as icons for each service.
+*   We add subtle scroll-triggered effects using the `data-aos` attribute, which will be handled by the `base.html` script. The effects are delayed by 100ms for each subsequent service to create a staggered animation effect.
+
+This code provides a responsive and visually appealing services/features section for a Jewelry Boutique website.
+    </section>
+
+    <section id="testimonials-section" class="py-24 px-6 relative bg-slate-900/50">
+        
+<!-- Testimonials/Reviews Section -->
+<section class="testimonials">
+  <h2 class="headline">What Our Clients Say</h2>
+  <div class="grid">
+    <!-- Testimonial Card 1 -->
+    <div class="glass testimonial-card">
+      <p>"I recently purchased a custom-made necklace from Jewelry Boutique, and I am absolutely thrilled with the result! The quality is exceptional, and the customer service was top-notch."</p>
+      <div class="rating">
+        <span style="color: #ffd700">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      </div>
+      <p class="testimonial-author">- Emily Wilson, February 10, 2023</p>
+    </div>
+    <!-- Testimonial Card 2 -->
+    <div class="glass testimonial-card">
+      <p>"I was blown away by the unique and beautiful designs at Jewelry Boutique. The staff were knowledgeable and helpful, and I ended up finding the perfect engagement ring for my fiancé."</p>
+      <div class="rating">
+        <span style="color: #ffd700">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      </div>
+      <p class="testimonial-author">- David Lee, January 25, 2023</p>
+    </div>
+    <!-- Testimonial Card 3 -->
+    <div class="glass testimonial-card">
+      <p>"I've never been a big fan of jewelry, but the team at Jewelry Boutique helped me find the perfect accessory for my wedding day. The attention to detail and care they showed was impressive."</p>
+      <div class="rating">
+        <span style="color: #ffd700">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      </div>
+      <p class="testimonial-author">- Sarah Taylor, March 1, 2023</p>
+    </div>
+    <!-- Testimonial Card 4 -->
+    <div class="glass testimonial-card">
+      <p>"I've been a loyal customer of Jewelry Boutique for years, and I've always been satisfied with the quality and service. My latest purchase, a pair of earrings, did not disappoint – they're stunning!"</p>
+      <div class="rating">
+        <span style="color: #ffd700">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      </div>
+      <p class="testimonial-author">- Rachel Brown, February 20, 2023</p>
+    </div>
+  </div>
+</section>
+
+
+To style the above HTML, you can use the following CSS:
+
+css
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Testimonials Section */
+.testimonials {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .headline {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+}
+
+.testimonial-card p {
+  margin-bottom: 10px;
+}
+
+.rating {
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+This code creates a testimonials section with a grid layout, featuring 4 testimonial cards with a glass effect. Each card includes a review, a 5-star rating, and the author's name and date. The design is responsive, adapting to different screen sizes. 
+    </section>
+
+    <section id="contact-section" class="py-24 px-6 relative">
+        
+<!-- Dark, Minimalist Contact Section -->
+<section class="contact-section">
+  <div class="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
+    <h2 class="text-3xl text-white">Ready for an Upgrade?</h2>
+    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full text-2xl mt-4">
+      Chat on WhatsApp
+    </button>
+    <div class="mt-6 text-gray-400">
+      <p>Alternatively, you can reach us at:</p>
+      <p>example@email.com</p>
+      <p>123-456-7890</p>
+    </div>
+  </div>
+</section>
+
+
+To make this code work, you'll need to include the Tailwind CSS library in your project, as it uses utility classes for styling. You can include it in your HTML file by adding the following line of code in the `<head>` section:
+
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+Alternatively, you can use a custom CSS solution:
+
+css
+.contact-section {
+  background-color: #2f2f2f;
+  color: #fff;
+}
+
+.bg-green-500 {
+  background-color: #34c759;
+}
+
+.hover\:bg-green-700:hover {
+  background-color: #2ecc40;
+}
+
+.text-gray-400 {
+  color: #cbd5e0;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+
+And modify the HTML code to use the custom CSS classes:
+
+
+<!-- Dark, Minimalist Contact Section -->
+<section class="contact-section">
+  <div class="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
+    <h2 class="text-3xl text-white">Ready for an Upgrade?</h2>
+    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full text-2xl mt-4">
+      Chat on WhatsApp
+    </button>
+    <div class="mt-6 text-gray-400">
+      <p>Alternatively, you can reach us at:</p>
+      <p>example@email.com</p>
+      <p>123-456-7890</p>
+    </div>
+  </div>
+</section>
+
+    </section>
+
+    <footer class="text-center py-10 border-t border-white/10 text-slate-500">
+        <p>&copy; 2025 {{BUSINESS_NAME}}. Crafted with Excellence. (Demo Site)</p>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Navbar Float
+        gsap.from("#navbar", { y: -100, opacity: 0, duration: 1, ease: "power2.out", delay: 0.5 });
+        
+        // Features Scroll Animation (using the new ID)
+        gsap.from("#features-section", {
+            scrollTrigger: "#features-section",
+            opacity: 0, 
+            y: 50, 
+            duration: 1, 
+            delay: 0.2,
+            once: true // Only plays once when scrolled to
+        });
+    </script>
+</body>
+</html>
