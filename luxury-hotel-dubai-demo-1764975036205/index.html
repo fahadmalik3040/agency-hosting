@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury_Hotel Dubai Demo - Official Site</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+        body { 
+            font-family: 'Outfit', sans-serif; 
+            background-color: #050505; /* Deep Black Background */
+            color: #f8fafc; 
+            overflow-x: hidden; /* Horizontal scroll prevent */
+        }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        
+        /* Glassmorphism Effect */
+        .glass { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(16px); 
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        /* Gradient Text for Headings */
+        .text-gradient {
+            background: linear-gradient(to right, #fbbf24, #d946ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 px-6 py-4 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto glass rounded-full px-6 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wide">{{BUSINESS_NAME}}</h1>
+            <a href="#contact-section" class="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-6 py-2 rounded-full font-medium hover:scale-105 transition-transform shadow-lg shadow-orange-500/30">Book Now</a>
+        </div>
+    </nav>
+
+    <main id="hero-section" class="relative min-h-screen flex items-center justify-center pt-28 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-purple-600/20 rounded-full blur-[120px] -z-10"></div>
+        ### Luxury Hotel Hero Section
+
+
+<section class="h-screen bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://image.pollinations.ai/prompt/cinematic%20shot%20of%20Luxury_Hotel,%20modern%20lighting,%20dark%20mood,%204k,%20luxury%20aesthetic?width=1280&height=720&nologo=true')">
+  <div class="container mx-auto p-12 pt-24 md:p-24 text-center">
+    <h1 class="text-gradient text-7xl md:text-9xl font-serif font-bold mb-12">
+      Luxury Hotel Dubai Demo
+    </h1>
+    <p class="text-xl md:text-2xl text-gray-200 mb-12">Experience the epitome of luxury and comfort in the heart of Dubai.</p>
+    <div class="flex flex-col md:flex-row justify-center gap-4">
+      <a href="#" class="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white font-bold px-8 py-4 rounded-lg transition duration-300 ease-in-out">
+        Book Now
+      </a>
+      <a href="#" class="border border-gray-200 hover:border-gray-400 text-gray-200 hover:text-gray-400 font-bold px-8 py-4 rounded-lg transition duration-300 ease-in-out">
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CSS for text-gradient class (add to your stylesheet) -->
+<style>
+  .text-gradient {
+    background: linear-gradient(to right, #ff8a00, #da1b60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
+
+
+### Explanation
+- **Background Image:** The background image is set using the `style` attribute with a linear gradient overlay for contrast.
+- **Typography:** The `text-gradient` class is applied to the main `h1` headline, which uses a font size of `text-7xl` on desktop and `text-9xl` on larger screens.
+- **Buttons:** Two prominent buttons are included: "Book Now" with a gradient background and "Learn More" with an outlined style. Both buttons have hover effects for better user experience.
+- **Responsiveness:** The hero section is designed to be fully responsive, with excellent mobile responsiveness ensured through the use of relative units and flexbox layout.
+- **No HTML/BODY Tags:** As per the requirements, no `<html>` or `<body>` tags are included in the code snippet. The provided code can be directly embedded within an existing HTML structure.
+    </main>
+
+    <section id="features-section" class="py-32 px-6 relative max-w-7xl mx-auto">
+        
+<!-- Services/Features Section -->
+<section class="container mx-auto p-12 pt-24">
+  <h2 class="text-3xl text-center mb-12">Luxury Services</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Service 1: Personalized Butler -->
+    <div class="glass feature-card p-8 rounded-2xl hover:bg-white/10 transition duration-300 transform hover:scale-[1.02]" data-scroll>
+      <div class="flex mb-4">
+        <span class="text-3xl mr-4">👥</span>
+        <h3 class="text-xl font-bold">Personalized Butler</h3>
+      </div>
+      <p class="text-gray-500">Experience the ultimate in personalized service with our dedicated butlers, available to cater to your every need.</p>
+    </div>
+
+    <!-- Service 2: Private Spa -->
+    <div class="glass feature-card p-8 rounded-2xl hover:bg-white/10 transition duration-300 transform hover:scale-[1.02]" data-scroll>
+      <div class="flex mb-4">
+        <span class="text-3xl mr-4">💆‍♀️</span>
+        <h3 class="text-xl font-bold">Private Spa</h3>
+      </div>
+      <p class="text-gray-500">Indulge in our luxurious private spa, offering a range of treatments and therapies to rejuvenate your body and mind.</p>
+    </div>
+
+    <!-- Service 3: Gourmet Dining -->
+    <div class="glass feature-card p-8 rounded-2xl hover:bg-white/10 transition duration-300 transform hover:scale-[1.02]" data-scroll>
+      <div class="flex mb-4">
+        <span class="text-3xl mr-4">🍴</span>
+        <h3 class="text-xl font-bold">Gourmet Dining</h3>
+      </div>
+      <p class="text-gray-500">Savor the finest cuisine in our luxurious dining rooms, with menus crafted by world-renowned chefs to delight your senses.</p>
+    </div>
+
+    <!-- Service 4: Exclusive Excursions -->
+    <div class="glass feature-card p-8 rounded-2xl hover:bg-white/10 transition duration-300 transform hover:scale-[1.02]" data-scroll>
+      <div class="flex mb-4">
+        <span class="text-3xl mr-4">🚣‍♀️</span>
+        <h3 class="text-xl font-bold">Exclusive Excursions</h3>
+      </div>
+      <p class="text-gray-500">Experience the ultimate in luxury travel with our curated excursions, taking you to the most breathtaking destinations in style and comfort.</p>
+    </div>
+  </div>
+</section>
+
+
+In this code:
+
+*   We use a `container` div to wrap the entire section, with a maximum width and horizontal padding for better responsiveness.
+*   The `grid` class is used to create a grid layout, with `grid-cols-1` on mobile and `md:grid-cols-3` on desktop to achieve the desired layout.
+*   Each service is represented by a `div` with the `glass feature-card` class, which includes the styles for the card, including padding, rounded corners, and hover effects.
+*   The `data-scroll` attribute is added to each card to enable scroll-triggered effects, which will be handled by the `base.html` script.
+*   Relevant emojis are used as icons for each service, and the content is concise and descriptive, highlighting the luxury features of the hotel.
+    </section>
+
+    <section id="testimonials-section" class="py-24 px-6 relative bg-slate-900/50">
+        
+<!-- Testimonials/Reviews Section -->
+<section class="testimonials">
+  <h2 class="headline">What Our Clients Say</h2>
+  <div class="grid-container">
+    <!-- Testimonial Card 1 -->
+    <div class="glass testimonial-card">
+      <p>
+        "I recently had the pleasure of staying at this luxury hotel, and I must say, it exceeded all my expectations. The staff were incredibly friendly and attentive, the rooms were immaculate, and the food was exquisite. I would highly recommend this hotel to anyone looking for a 5-star experience."
+      </p>
+      <div class="rating">
+        <span style="color: #ffd700;">★★★★★</span>
+      </div>
+      <p class="author">- Emily Wilson, February 10, 2023</p>
+    </div>
+
+    <!-- Testimonial Card 2 -->
+    <div class="glass testimonial-card">
+      <p>
+        "My husband and I spent our anniversary at this hotel, and it was truly unforgettable. The ambiance was romantic, the service was top-notch, and the amenities were world-class. We can't wait to come back and experience it all again."
+      </p>
+      <div class="rating">
+        <span style="color: #ffd700;">★★★★★</span>
+      </div>
+      <p class="author">- Sarah Lee, January 20, 2023</p>
+    </div>
+
+    <!-- Testimonial Card 3 -->
+    <div class="glass testimonial-card">
+      <p>
+        "As a business traveler, I've stayed at my fair share of hotels, but this one stands out from the rest. The rooms are spacious, the Wi-Fi is fast, and the location is convenient. The staff are also very helpful and accommodating. I would definitely stay here again."
+      </p>
+      <div class="rating">
+        <span style="color: #ffd700;">★★★★★</span>
+      </div>
+      <p class="author">- David Kim, March 1, 2023</p>
+    </div>
+
+    <!-- Testimonial Card 4 -->
+    <div class="glass testimonial-card">
+      <p>
+        "I've never written a review before, but my experience at this hotel was so exceptional that I felt compelled to share it. The hotel's attention to detail, from the luxurious linens to the personalized service, made our stay truly special. We can't recommend it enough."
+      </p>
+      <div class="rating">
+        <span style="color: #ffd700;">★★★★★</span>
+      </div>
+      <p class="author">- Rachel Patel, February 25, 2023</p>
+    </div>
+  </div>
+</section>
+
+
+And here's some sample CSS to get you started:
+
+css
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Testimonials Section */
+.testimonials {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.headline {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.glass {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rating {
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+This code creates a testimonials section with a grid layout, featuring four testimonial cards with a "glass" effect. Each card includes a 5-star rating, a review, and the author's name and date. The CSS provides a basic styling for the section, including a grid container, testimonial cards, and a responsive design for smaller screens. You can customize the styles to fit your luxury hotel's brand and design. 
+    </section>
+
+    <section id="contact-section" class="py-24 px-6 relative">
+        
+<!-- Contact Section -->
+<section class="contact-section bg-gray-900 text-gray-100 py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="headline text-3xl font-bold mb-4">Ready for an Upgrade?</h2>
+    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full text-lg">
+      Chat on WhatsApp
+    </button>
+    <div class="contact-info mt-8">
+      <p class="text-sm">Alternatively, you can reach us at:</p>
+      <textarea rows="3" class="w-full bg-gray-800 text-gray-100 p-2 mt-2">
+Email: example@email.com
+Phone: +1234567890
+      </textarea>
+    </div>
+  </div>
+</section>
+
+
+**Explanation:**
+
+* We're using Tailwind CSS classes to style the HTML elements. If you're not familiar with Tailwind, you can replace the classes with your own CSS styles.
+* The `bg-gray-900` class sets the background color to a dark gray, while `text-gray-100` sets the text color to a light gray.
+* The `py-12` class adds padding to the top and bottom of the section, while `px-4` adds padding to the left and right.
+* The `headline` class is used to style the headline, but you can replace it with your own CSS styles.
+* The `bg-green-500` class sets the background color of the button to a green color, while `hover:bg-green-700` sets the hover background color to a darker green.
+* The `contact-info` class is used to style the contact information section, but you can replace it with your own CSS styles.
+* The `textarea` element is used to display the email and phone contact information. You can replace it with a `p` element or any other HTML element that suits your needs.
+
+**Example Use Case:**
+
+You can use this HTML code to create a dark, minimalist contact section on your website. Simply copy and paste the code into your HTML file, and adjust the styles and content as needed to fit your website's design and branding.
+    </section>
+
+    <footer class="text-center py-10 border-t border-white/10 text-slate-500">
+        <p>&copy; 2025 {{BUSINESS_NAME}}. Crafted with Excellence. (Demo Site)</p>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Navbar Float
+        gsap.from("#navbar", { y: -100, opacity: 0, duration: 1, ease: "power2.out", delay: 0.5 });
+        
+        // Features Scroll Animation (using the new ID)
+        gsap.from("#features-section", {
+            scrollTrigger: "#features-section",
+            opacity: 0, 
+            y: 50, 
+            duration: 1, 
+            delay: 0.2,
+            once: true // Only plays once when scrolled to
+        });
+    </script>
+</body>
+</html>
