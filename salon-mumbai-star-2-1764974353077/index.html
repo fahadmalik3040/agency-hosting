@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Salon Mumbai Star 2 - Official Site</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+      /* Dark Theme Settings */
+      body {
+        font-family: sans-serif;
+        background-color: #0f172a;
+        color: white;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="fixed w-full z-50 glass px-6 py-4 flex justify-between items-center border-b border-gray-800">
+      <h1 class="text-2xl font-bold text-blue-400">{{BUSINESS_NAME}}</h1>
+      <a
+        href="#contact"
+        class="bg-blue-600 px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-500 transition"
+        >Contact Us</a
+      >
+    </nav>
+
+    <main id="hero">
+<section class="h-screen bg-gray-900 text-white">
+  <div class="container mx-auto p-12 pt-24 md:p-24">
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full xl:w-1/2 p-6">
+        <h1 class="text-5xl font-bold mb-4">Salon Mumbai Star 2</h1>
+        <p class="text-lg">Experience the ultimate in hair and beauty care at Salon Mumbai Star 2. Our expert stylists and technicians are dedicated to providing you with exceptional service and unparalleled results.</p>
+        <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Book an Appointment</button>
+      </div>
+      <div class="w-full xl:w-1/2 p-6">
+        <img src="image-url" alt="Salon Image" class="rounded shadow-md">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+Replace `"image-url"` with the actual URL of the image you want to use in the hero section.
+
+This code uses Tailwind CSS classes to create a dark-themed hero section with a heading, paragraph, button, and an image. The section is responsive and will adjust its layout based on the screen size. The button has a hover effect to change its background color.</main>
+
+    <section
+      id="features"
+      class="py-20 px-4">
+      
+<section class="glassmorphisms-section py-20">
+  <div class="container mx-auto p-4">
+    <h2 class="text-3xl text-center mb-10">Our Features</h2>
+    <div class="flex flex-wrap justify-center gap-10">
+      <div class="bg-white glassmorphism-card rounded-3xl p-10 w-80">
+        <h3 class="text-2xl font-bold mb-5">Expert Stylists</h3>
+        <p class="text-gray-600">Our team of expert stylists are dedicated to providing you with the best possible service.</p>
+      </div>
+      <div class="bg-white glassmorphism-card rounded-3xl p-10 w-80">
+        <h3 class="text-2xl font-bold mb-5">State-of-the-Art Equipment</h3>
+        <p class="text-gray-600">We use only the latest and greatest equipment to ensure that you receive the best results.</p>
+      </div>
+      <div class="bg-white glassmorphism-card rounded-3xl p-10 w-80">
+        <h3 class="text-2xl font-bold mb-5">Personalized Experience</h3>
+        <p class="text-gray-600">We take the time to understand your unique needs and provide a personalized experience tailored just for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Add this to your CSS file to create the glassmorphism effect -->
+ 
+.glassmorphism-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+    </section>
+
+    <section id="contact">
+<section class="bg-gray-100 py-20">
+  <div class="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
+    <h2 class="text-3xl font-bold text-center mb-12">Get in Touch with Salon Mumbai Star 2</h2>
+    <div class="flex flex-col items-center mb-12">
+      <p class="text-lg text-gray-600 text-center">Have any questions or want to book an appointment? We'd love to hear from you.</p>
+      <a href="https://wa.me/your-whatsapp-number" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" target="_blank">
+        <i class="fab fa-whatsapp fa-fw mr-2"></i> WhatsApp Us
+      </a>
+    </div>
+    <div class="flex flex-col items-center">
+      <p class="text-lg text-gray-600 text-center mb-4">Alternatively, you can contact us at:</p>
+      <address class="text-lg text-gray-600 text-center">
+        Salon Mumbai Star 2<br>
+        Address: Your Address<br>
+        Phone: Your Phone Number<br>
+        Email: <a href="mailto:your-email@example.com" class="text-blue-600 hover:text-blue-800">your-email@example.com</a>
+      </address>
+    </div>
+  </div>
+</section>
+</section>
+
+    <footer
+      class="text-center py-8 text-gray-500 text-sm border-t border-gray-800">
+      &copy; 2025 {{BUSINESS_NAME}}. Built with AI.
+    </footer>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.from('#hero', { opacity: 0, y: 50, duration: 1.5 });
+      gsap.from('#features', {
+        scrollTrigger: '#features',
+        opacity: 0,
+        y: 30,
+        duration: 1,
+      });
+    </script>
+  </body>
+</html>
