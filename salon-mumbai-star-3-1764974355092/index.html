@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Salon Mumbai Star 3 - Official Site</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+      /* Dark Theme Settings */
+      body {
+        font-family: sans-serif;
+        background-color: #0f172a;
+        color: white;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="fixed w-full z-50 glass px-6 py-4 flex justify-between items-center border-b border-gray-800">
+      <h1 class="text-2xl font-bold text-blue-400">{{BUSINESS_NAME}}</h1>
+      <a
+        href="#contact"
+        class="bg-blue-600 px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-500 transition"
+        >Contact Us</a
+      >
+    </nav>
+
+    <main id="hero">
+<section class="bg-gray-900 text-gray-100">
+  <div class="container mx-auto p-12 pt-24 md:p-24">
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
+        <h1 class="text-5xl font-bold mb-4">Salon Mumbai Star 3</h1>
+        <p class="text-xl mb-8">Experience the best hair and beauty services in Mumbai at Salon Mumbai Star 3. Our expert stylists and technicians are dedicated to providing you with a personalized and exceptional experience.</p>
+        <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Book an Appointment</button>
+      </div>
+      <div class="w-full lg:w-1/2 px-4">
+        <img src="image-url" alt="Salon Image" class="w-full h-full object-cover object-center">
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+    <section
+      id="features"
+      class="py-20 px-4">
+      
+<section class="py-20 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-12 text-center">Our Features</h2>
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full md:w-1/3 xl:w-1/3 p-6">
+        <div class="bg-white rounded-3xl shadow-xl glassmorphize p-8">
+          <h3 class="text-lg font-bold mb-2">Experienced Stylists</h3>
+          <p class="text-gray-600">Our team of expert stylists are dedicated to providing you with the best possible service.</p>
+        </div>
+      </div>
+      <div class="w-full md:w-1/3 xl:w-1/3 p-6">
+        <div class="bg-white rounded-3xl shadow-xl glassmorphize p-8">
+          <h3 class="text-lg font-bold mb-2">High-Quality Products</h3>
+          <p class="text-gray-600">We use only the highest quality products to ensure your hair looks and feels its best.</p>
+        </div>
+      </div>
+      <div class="w-full md:w-1/3 xl:w-1/3 p-6">
+        <div class="bg-white rounded-3xl shadow-xl glassmorphize p-8">
+          <h3 class="text-lg font-bold mb-2">Relaxing Atmosphere</h3>
+          <p class="text-gray-600">Our salon is designed to provide a relaxing and calming atmosphere, making your visit a truly enjoyable experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </section>
+
+    <section id="contact">
+<section class="bg-gray-100 py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Get in Touch with Salon Mumbai Star 3</h2>
+    <div class="flex flex-col items-center mb-4">
+      <p class="text-lg text-center">Have any questions or want to book an appointment? We'd love to hear from you!</p>
+    </div>
+    <div class="flex justify-center">
+      <a href="https://wa.me/your-whatsapp-number" target="_blank" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+        <i class="fab fa-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
+    <div class="flex flex-col items-center mt-8">
+      <p class="text-lg text-center">Address: Salon Mumbai Star 3, Mumbai</p>
+      <p class="text-lg text-center">Phone: +91 1234567890</p>
+      <p class="text-lg text-center">Email: <a href="mailto:info@salonmumbaistar3.com" class="text-blue-600 hover:text-blue-800">info@salonmumbaistar3.com</a></p>
+    </div>
+  </div>
+</section>
+</section>
+
+    <footer
+      class="text-center py-8 text-gray-500 text-sm border-t border-gray-800">
+      &copy; 2025 {{BUSINESS_NAME}}. Built with AI.
+    </footer>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.from('#hero', { opacity: 0, y: 50, duration: 1.5 });
+      gsap.from('#features', {
+        scrollTrigger: '#features',
+        opacity: 0,
+        y: 30,
+        duration: 1,
+      });
+    </script>
+  </body>
+</html>
