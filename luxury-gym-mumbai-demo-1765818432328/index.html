@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury_Gym Mumbai Demo - Official Site</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+        body { 
+            font-family: 'Outfit', sans-serif; 
+            background-color: #050505; /* Deep Black Background */
+            color: #f8fafc; 
+            overflow-x: hidden; /* Horizontal scroll prevent */
+        }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        
+        /* Glassmorphism Effect */
+        .glass { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(16px); 
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        /* Gradient Text for Headings */
+        .text-gradient {
+            background: linear-gradient(to right, #fbbf24, #d946ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 px-6 py-4 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto glass rounded-full px-6 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wide">Luxury_Gym Mumbai Demo</h1>
+            <a href="#contact-section" class="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-6 py-2 rounded-full font-medium hover:scale-105 transition-transform shadow-lg shadow-orange-500/30">Book Now</a>
+        </div>
+    </nav>
+
+    <main id="hero-section" class="relative min-h-screen flex items-center justify-center pt-28 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-purple-600/20 rounded-full blur-[120px] -z-10"></div>
+        
+<section class="h-screen w-full relative glass bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://image.pollinations.ai/prompt/cinematic%20shot%20of%20Luxury_Gym,%20modern%20lighting,%20dark%20mood,%204k,%20luxury%20aesthetic?width=1280&height=720&nologo=true')">
+  <div class="container mx-auto p-12 pt-24 md:p-24 lg:pt-32 flex flex-col items-center justify-center h-full">
+    <h1 class="text-gradient text-5xl md:text-7xl lg:text-9xl font-bold text-center">Luxury_Gym Mumbai Demo</h1>
+  </div>
+</section>
+
+    </main>
+
+    <section id="features-section" class="py-32 px-6 relative max-w-7xl mx-auto">
+        
+<section class="container mx-auto p-12 pt-24 md:pt-16">
+  <h2 class="text-3xl font-bold text-center mb-12">Our Luxury Services</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="glass feature-card p-6 rounded-2xl hover:scale-[1.03]">
+      <h3 class="text-xl font-bold mb-4">Personalized Fitness Coaching</h3>
+      <p class="text-gray-600">Our expert trainers will create a customized fitness plan tailored to your specific goals and needs, ensuring you achieve optimal results in a safe and supportive environment.</p>
+      <ul class="list-disc list-inside text-gray-600 mt-4">
+        <li>Comprehensive fitness assessment</li>
+        <li>Personalized workout planning</li>
+        <li>Ongoing progress monitoring and coaching</li>
+      </ul>
+    </div>
+    <div class="glass feature-card p-6 rounded-2xl hover:scale-[1.03]">
+      <h3 class="text-xl font-bold mb-4">Small Group Training Sessions</h3>
+      <p class="text-gray-600">Join our intimate group training sessions, led by experienced instructors, and enjoy a dynamic and motivating workout experience with like-minded individuals.</p>
+      <ul class="list-disc list-inside text-gray-600 mt-4">
+        <li>Maximum 6 participants per session</li>
+        <li>Expert instruction and guidance</li>
+        <li>Variety of workouts to keep you engaged</li>
+      </ul>
+    </div>
+    <div class="glass feature-card p-6 rounded-2xl hover:scale-[1.03]">
+      <h3 class="text-xl font-bold mb-4">Luxury Spa and Wellness Services</h3>
+      <p class="text-gray-600">Indulge in our opulent spa facilities, featuring an array of rejuvenating treatments, from soothing massages to invigorating facials, designed to pamper and revitalize your mind, body, and spirit.</p>
+      <ul class="list-disc list-inside text-gray-600 mt-4">
+        <li>Aromatherapy massages</li>
+        <li>Customized facials and skin treatments</li>
+        <li>Relaxing sauna and steam rooms</li>
+      </ul>
+    </div>
+    <div class="glass feature-card p-6 rounded-2xl hover:scale-[1.03]">
+      <h3 class="text-xl font-bold mb-4">Nutrition and Meal Planning</h3>
+      <p class="text-gray-600">Our team of registered dietitians will work with you to create a personalized nutrition plan, providing guidance on healthy eating habits, meal planning, and supplementation to support your fitness goals.</p>
+      <ul class="list-disc list-inside text-gray-600 mt-4">
+        <li>Comprehensive dietary assessment</li>
+        <li>Customized meal planning and grocery lists</li>
+        <li>Ongoing nutrition coaching and support</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </section>
+
+    <section id="testimonials-section" class="py-24 px-6 relative bg-slate-900/50">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+  <div class="glass p-8 rounded-lg">
+    <div class="flex justify-start mb-4">
+      <span class="text-lg text-yellow-400">★★★★★</span>
+    </div>
+    <p class="text-lg text-gray-600">I've been a member of Luxury_Gym for over a year now, and I can honestly say it's the best gym I've ever been to. The facilities are top-notch, the staff are friendly and knowledgeable, and the classes are always challenging and engaging.</p>
+    <p class="text-lg text-gray-600 mt-4">- Emily R.</p>
+  </div>
+  <div class="glass p-8 rounded-lg">
+    <div class="flex justify-start mb-4">
+      <span class="text-lg text-yellow-400">★★★★★</span>
+    </div>
+    <p class="text-lg text-gray-600">The personal training sessions at Luxury_Gym have been a game-changer for me. My trainer is always pushing me to be my best, and I've seen real results in just a few months. The gym itself is always clean and well-maintained, and the atmosphere is always motivating.</p>
+    <p class="text-lg text-gray-600 mt-4">- David K.</p>
+  </div>
+  <div class="glass p-8 rounded-lg">
+    <div class="flex justify-start mb-4">
+      <span class="text-lg text-yellow-400">★★★★★</span>
+    </div>
+    <p class="text-lg text-gray-600">I was a bit skeptical about joining a luxury gym, but Luxury_Gym has exceeded all of my expectations. The group classes are always fun and challenging, and the equipment is always state-of-the-art. The staff are also super friendly and helpful, which makes a big difference.</p>
+    <p class="text-lg text-gray-600 mt-4">- Sarah L.</p>
+  </div>
+  <div class="glass p-8 rounded-lg">
+    <div class="flex justify-start mb-4">
+      <span class="text-lg text-yellow-400">★★★★★</span>
+    </div>
+    <p class="text-lg text-gray-600">I've tried a few different gyms in the past, but Luxury_Gym is by far the best. The facilities are amazing, the staff are knowledgeable and supportive, and the community is really welcoming. I feel like I've finally found a gym that I can call home.</p>
+    <p class="text-lg text-gray-600 mt-4">- James B.</p>
+  </div>
+</div> 
+    </section>
+
+    <section id="contact-section" class="py-24 px-6 relative">
+        <div class="max-w-5xl mx-auto p-12 pt-6 md:p-16 lg:p-20 xl:p-24">
+  <h2 class="text-3xl text-gray-900 font-bold mb-4">Get in Touch</h2>
+  <p class="text-lg text-gray-600 mb-8">Have a question or want to learn more about our services? We're here to help.</p>
+  <div class="flex justify-center mb-12">
+    <a href="#" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">Chat on WhatsApp</a>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="flex flex-col">
+      <label for="name" class="text-lg text-gray-600 mb-2">Name:</label>
+      <input type="text" id="name" class="p-2 pl-10 text-sm text-gray-700 border border-gray-200 rounded-lg focus:outline-none focus:ring-green-600 focus:border-green-600">
+    </div>
+    <div class="flex flex-col">
+      <label for="email" class="text-lg text-gray-600 mb-2">Email:</label>
+      <input type="email" id="email" class="p-2 pl-10 text-sm text-gray-700 border border-gray-200 rounded-lg focus:outline-none focus:ring-green-600 focus:border-green-600">
+    </div>
+    <div class="flex flex-col md:col-span-2">
+      <label for="message" class="text-lg text-gray-600 mb-2">Message:</label>
+      <textarea id="message" class="p-2 pl-10 text-sm text-gray-700 border border-gray-200 rounded-lg focus:outline-none focus:ring-green-600 focus:border-green-600 h-32"></textarea>
+    </div>
+  </div>
+  <div class="flex justify-center mt-12">
+    <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-lg">Send Message</button>
+  </div>
+</div>
+    </section>
+
+    <footer class="text-center py-10 border-t border-white/10 text-slate-500">
+        <p>&copy; 2025 Luxury_Gym Mumbai Demo. Crafted with Excellence. (Demo Site)</p>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Navbar Float
+        gsap.from("#navbar", { y: -100, opacity: 0, duration: 1, ease: "power2.out", delay: 0.5 });
+        
+        // Features Scroll Animation (using the new ID)
+        gsap.from("#features-section", {
+            scrollTrigger: "#features-section",
+            opacity: 0, 
+            y: 50, 
+            duration: 1, 
+            delay: 0.2,
+            once: true // Only plays once when scrolled to
+        });
+    </script>
+</body>
+</html>
